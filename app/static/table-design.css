@@ -1,0 +1,49 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+#inputs {
+	display: none;
+}
+
+#main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+table {
+	table-layout: fixed;
+	overflow: auto;
+	text-align: center;
+	width: 100%;
+	font-family: inherit;
+}
+
+th {
+	background-color: #8AACB8;
+}
+
+td {
+	cursor: default;
+}
+
+th, td {
+	padding: 0.5vw;
+	border-bottom: 1px solid #8AACB8;
+}
+
+td:hover {
+	background-color: #D3D3D3;
+}
+
+.maxValClass, .minValClass {
+	font-weight: 900;
+}
+
+.maxValClass {
+	background-color: rgb(81, 215, 110);
+}
+
+.minValClass {
+	background-color: rgb(204, 117, 98);
+}
