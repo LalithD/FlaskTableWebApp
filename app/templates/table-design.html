@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test Table</title>
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
+		<link href="{{ url_for('static', filename='table-design.css') }}" rel="stylesheet" type="text/css">
+		<script src="{{ url_for('static', filename='table-design.js') }}"></script>
+	</head>
+	<body>
+		<div id="main">
+			<div id="inputs">
+				{% for column_data in table.column_list %}
+					<select name="{{ column_data.column_name }}">
+						{% for value in column_data.value_list %}
+							<option value="{{ value }}">{{ value }}</option>
+						{% endfor %}
+					</select>
+				{% endfor %}
+			</div>
+			<div id="table-container">
+				{% for table in data.tables %}
+					<table id="{{ table.name }}">
+						<thead>
+							<tr>
+								{% for colname in table.column_names %}
+									<th>{{ colname }}</th>
+								{% endfor %}
+							</tr>
+						</thead>
+						<tbody>
+							{% for row in table.rows %}
+								<tr>
+									{% for key, value in row.items() %}
+										<td>{{ value }}</td>
+									{% endfor %}
+								</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				{% endfor %}
+			</div>
+		</div>
+	</body>
+</html>
