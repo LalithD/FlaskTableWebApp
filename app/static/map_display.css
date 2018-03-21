@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+}
+
+svg {
+    border: 1px solid black;
+}
+
+#svg-map {
+    width: 20%;
+}
+
+#mouseoverDiv, path {
+    cursor: pointer;
+}
+
+path:hover {
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+#mouseoverDiv {
+    padding: 5px;
+    background-color: rgb(98, 73, 221);
+    color: white;
+    position: fixed;
+    display: none;
+    pointer-events: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+#svgContainer {
+    width: 100%;
+    float: left;
+}
+
+.mapCategory1 {
+    fill: hsl(30, 50%, 90%);
+}
+
+.mapCategory2 {
+    fill: hsl(30, 50%, 80%);
+}
+
+.mapCategory3 {
+    fill: hsl(30, 50%, 70%);
+}
+
+.mapCategory4 {
+    fill: hsl(30, 50%, 60%);
+}
+
+.mapCategory5 {
+    fill: hsl(30, 50%, 50%);
+}
+
+.mapCategory6 {
+    fill: hsl(30, 50%, 40%);
+}
+
+.mapCategory7 {
+    fill: hsl(30, 50%, 30%);
+}
+
+.mapCategory8 {
+    fill: hsl(30, 50%, 20%);
+}
+
+.mapCategory9 {
+    fill: hsl(30, 50%, 10%);
+}
+
+.mapCategory10 {
+    fill: hsl(30, 50%, 0%);
+}
